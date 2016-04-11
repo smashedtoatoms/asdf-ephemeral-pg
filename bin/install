@@ -18,7 +18,9 @@ install_ephemeral_postgres() {
   # because we don't want to disturb current working dir
   (
     cd $(dirname $source_path)
-    tar zxf $source_path || exit 1
+    local pretty_path=${source_path/.tar.gz/}
+    mkdir $pretty_path
+    tar zxf $source_path -C $pretty_path --strip-components 1 || exit 1
     cd $(untar_path $install_type $version $tmp_download_dir)
 
     # set in os_based_configure_options

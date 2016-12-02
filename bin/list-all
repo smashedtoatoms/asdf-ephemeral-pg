@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 versions_list=(
-  1.9
+  2.1
   2.0
+  1.9
 )
 
 versions=""

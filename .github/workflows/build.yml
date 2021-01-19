@@ -17,8 +17,8 @@ jobs:
         os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: asdf_plugins_add
-        uses: asdf-vm/actions/plugins-add@v1
+      - name: asdf_install
+        uses: asdf-vm/actions/install@v1
         with:
           tool_versions: postgres 13.1
       - name: asdf_plugin_test

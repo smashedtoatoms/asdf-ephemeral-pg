@@ -17,11 +17,11 @@ jobs:
         os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: asdf_install
-        uses: asdf-vm/actions/install@v1
-        with:
-          tool_versions: postgres 13.1
+      # - name: asdf_install
+      #   uses: asdf-vm/actions/install@v1
+      #   with:
+      #     tool_versions: postgres 13.1
       - name: asdf_plugin_test
         uses: asdf-vm/actions/plugin-test@v1
         with:
-          command: asdf reshim && pg_tmp -w 1
+          command: ls -l # pg_tmp -w 1 should work, but asdf isn't reshimming the postgres dependency

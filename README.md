@@ -1,6 +1,6 @@
-# asdf-ephemeral-pg ![Build](https://github.com/smashedtoatoms/asdf-ephemeral-postgres/workflows/Build/badge.svg?branch=master)
+# asdf-ephemeral-postgres ![Build](https://github.com/smashedtoatoms/asdf-ephemeral-postgres/workflows/Build/badge.svg?branch=master)
 
-[Ephemeral PostgreSQL](http://ephemeralpg.org/) plugin for [asdf](https://github.com/asdf-vm/asdf) version manager
+[Ephemeral PostgreSQL](https://github.com/eradman/ephemeralpg) plugin for [asdf](https://github.com/asdf-vm/asdf) version manager
 
 ## Dependencies
 1. You will need make and postgres installed.

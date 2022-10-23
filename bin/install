@@ -31,20 +31,17 @@ install_ephemeral_postgres() {
   )
 }
 
-
 untar_path() {
   local install_type=$1
   local version=$2
   local tmp_download_dir=$3
 
-  if [ "$install_type" = "version" ]
-  then
-    echo "$tmp_download_dir/ephemeral-postgres-${version}"
+  if [ "$install_type" = "version" ]; then
+    echo "$tmp_download_dir/ephemeral-pg-${version}"
   else
-    echo "$tmp_download_dir/ephemeral-postgres-${version}"
+    echo "$tmp_download_dir/ephemeral-pg-${version}"
   fi
 }
-
 
 download_source() {
   local install_type=$1
@@ -55,22 +52,19 @@ download_source() {
   curl -Lo $download_path -C - $download_url
 }
 
-
 get_download_file_path() {
   local install_type=$1
   local version=$2
   local tmp_download_dir=$3
-  local pkg_name="ephemeral-postgres-${version}.tar.gz"
+  local pkg_name="ephemeral-pg-${version}.tar.gz"
 
   echo "$tmp_download_dir/$pkg_name"
 }
-
 
 get_download_url() {
   local install_type=$1
   local version=$2
   echo "https://eradman.com/ephemeralpg/code/ephemeralpg-${version}.tar.gz"
 }
-
 
 install_ephemeral_postgres $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH

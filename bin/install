@@ -69,7 +69,7 @@ get_download_file_path() {
 get_download_url() {
   local install_type=$1
   local version=$2
-  echo "http://ephemeralpg.org/code/ephemeralpg-${version}.tar.gz"
+  echo "https://eradman.com/ephemeralpg/code/ephemeralpg-${version}.tar.gz"
 }
 
 

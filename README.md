@@ -9,5 +9,5 @@
 ## Install
 
 ```
-asdf plugin-add ephemeral-pg https://github.com/smashedtoatoms/asdf-ephemeral-pg.git
+asdf plugin add ephemeral-pg https://github.com/smashedtoatoms/asdf-ephemeral-pg.git
 ```
